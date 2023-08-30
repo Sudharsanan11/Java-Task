@@ -1,0 +1,140 @@
+1. Java program to swap two variables.
+
+import java.util.Scanner;
+class SwapTwoVariables{
+
+	public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	int temp = a;
+	a = b;
+	b = temp;
+	System.out.println(a);
+	System.out.println(b);
+
+}
+}
+
+
+2. Java program to convert a binary number to binary numbers.
+
+class DecimalToBinary{
+
+	public static void main(String[] args){
+
+	System.out.println(Integer.toBinaryString(10));
+
+	System.out.println(Integer.toBinaryString(20));
+
+}
+}
+
+3. Java program to convert a binary number to decimal numbers.
+
+class BinaryToDecimal{
+
+	public static void main(String[] args){
+
+	System.out.println(Integer.parseInt("1010",2));
+
+	System.out.println(Integer.parseInt("1111",2));
+
+}
+}
+
+4. Java program to check whether java is installed on your computer or not.
+
+class checkJavaInstalled{
+
+	public static void main(String[] args){
+
+	System.out.println("Java Version:"+ System.getProperty("java.version"));
+
+	System.out.println("Java Runtime Version:"+ System.getProperty("java.runtime.version"));
+
+	System.out.println("Java Home:"+ System.getProperty("java.home"));
+
+	System.out.println("Java Vendor:"+ System.getProperty("java.vendor"));
+
+	System.out.println("Java Vendor URL:"+ System.getProperty("java.vendor.url"));
+
+	System.out.println("Java Class Path:"+ System.getProperty("java.class.path"));
+}
+}
+
+5. Java program and compute the sum of the digits of an integer.
+
+import java.util.Scanner;
+class SumofDigits{
+
+	public static void main(String[] args){
+
+	Scanner sc = new Scanner(System.in);
+
+	int a = sc.nextInt();
+	int sum=0,b;
+
+	while(a>0){
+
+		b = a % 10;
+		sum = sum + b;
+		a = a / 10;
+}
+	System.out.println(sum);
+
+}
+}
+
+6. Java program to compare two numbers.
+
+import java.util.Scanner;
+class kgm{
+
+	public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	System.out.println(a +"!="+ b);
+	System.out.println(a +"<"+ b);
+	System.out.println(a +"<="+ b);
+}
+}
+
+7. Java program to count the letters, spaces, numbers, and other characters of an string.
+
+import java.io.*;
+
+class count{
+
+	public static void main(String[] args){
+
+		String str = "My User Name is Scott@123";
+		int countc = 0,counts = 0, countn = 0, counto = 0;
+
+		for(int i=0; i < str.length(); i++){
+			char c = str.charAt(i);
+			if(c >='A' && c <= 'Z'){
+				countc++;
+
+			}
+			else if(c >= 'a' && c <= 'z'){
+				countc++;
+			}
+			else if(c >= '0' && c <= '9'){
+				countn++;
+			}
+			else if(c == ' '){
+				counts++;
+			}
+			else{
+				counto++;
+			}
+}
+		System.out.println("The Count of the Letters: " + countc);
+		System.out.println("The Count of the Spaces: " + counts);
+		System.out.println("The Count of the Numbers: " + countn);
+		System.out.println("The Count of the Other Characters: " + counto);
+		
+}
+}
